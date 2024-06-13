@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document Complet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        main {
+            padding: 1em;
+        }
+        section, article {
+            margin-bottom: 1em;
+            padding: 1em;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    Bienvenue
+    <header>
+        <h1>Bienvenue sur mon site</h1>
+    </header>
+    <nav>
+        <a href="#home">Accueil</a>
+        <a href="#about">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Accueil</h2>
+            <p>Ceci est la section d'accueil.</p>
+        </section>
+        <section id="about">
+            <h2>À propos</h2>
+            <p>Ceci est la section à propos de nous.</p>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <article>
+                <h3>Service 1</h3>
+                <p>Description du service 1.</p>
+            </article>
+            <article>
+                <h3>Service 2</h3>
+                <p>Description du service 2.</p>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <div>
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mon Site Web. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
